@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(white,orangered);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    position: relative;
+}
+.player-names{
+    width: 375px;
+    height: 560px;
+    background-color:white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.player-names h2,.rules h2{
+    color: #eb4040;
+    font-weight: 400;
+}
+.player-names input{
+    font-size: 15px;
+    font-family: 'Lato';
+    width: 300px;
+    color: #eb4040;
+    padding: 9px;
+    margin-top: 20px;
+    border: 1px solid #eb4040;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.player-names input:focus,.btn-start{
+    outline: none;
+}
+.player-names .player-name-2{
+    margin-bottom: 15px;
+}
+.player-names .btn-start{
+    font-family: 'Lato';
+    width: 120px;
+    background-color: #eb4040;
+    padding: 8px;
+    color: #f7f7f7;
+    border: 1px solid #eb4040;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*.rules{
+    position: absolute;
+    width: 375px;
+    top: 350px;
+    left: 30px;
+    background-color: white;
+    height: 330px;
+    padding: 20px;
+    border-radius: 5px;
+}*/
+.rules ul{
+    padding: 20px;
+}
+.rules ul li{
+    margin-bottom: 10px;
+}
+.wrapper{
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%,-50%);
+    background-color: white;
+    /*box-shadow: 0 10px 50px black;*/
+    overflow: hidden;
+    border-radius: 5px;
+}
+.clearfix{
+    clear: both;
+    display: table;
+    content: '';
+}
+.player-1,.player-2{
+    width: 50%;
+    height: 600px;
+    padding: 100px;
+    float: left;
+    background: darkgray;
+    color: beige;
+}
+.player-name{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.player-score{
+    text-align: center;
+    font-size: 80px;
+    color: orangered;
+    font-weight: 100;
+    margin-bottom: 130px;
+}
+.active{
+    background: white;
+}
+.active .player-name{
+    font-weight: 300;
+    color: black;
+}
+.active .player-name::after{
+    content: '\f192';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 15px;
+    font-weight: 900;
+    position: absolute;
+    color: #eb4040;
+    top: 15px;
+    right: 30px;
+}
+.current-player{
+    background-color: #eb4040;
+    color: white;
+    width: 40%;
+    margin: 0 auto;
+    padding: 13px;
+    text-align: center;
+    border-radius: 5px;
+}
+.current-player-indicator{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.current-player-score{
+    font-size: 40px;
+    font-family: 'Lato';
+    font-weight: 300;
+}
+.btn{
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    color: #555;
+    background: none;
+    border: 1px solid #eb4040;
+    border-radius: 5px;
+    font-size: 18px;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Lato';
+    font-weight: 500;
+    padding: 10px;
+}
+.btn:hover{
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.432);
+}
+.btn:focus{
+    outline: none;
+}
+.icon{
+    color: #eb4040;
+    margin-right: 15px;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: 2px;
+}
+.btn-new{
+    top: 50px;
+}
+.btn-roll{
+    top: 400px;
+}
+.btn-hold{
+    top: 450px;
+}
+.dice{
+    position: absolute;
+    left: 50%;
+    top: 180px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.151);
+}
+.winner{
+    background-color: #f7f7f7;
+}
+.winner .player-name{
+    font-weight: 300;
+    color: #eb4040;
+}
+#dice-1{
+    top: 150px;
+}
+#dice-2{
+    top: 280px;
+}
+.final-score{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 520px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lato';
+    width: 200px;
+    color: #eb4040;
+    padding: 10px;
+    border: 1px solid #eb4040;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.final-score:focus{
+    outline: none;
+}

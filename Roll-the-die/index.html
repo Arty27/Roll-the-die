@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" type="text/css">
+        <link rel="icon" href="images/icon.png" type="image/icon">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>Roll The Die</title>
+    </head>
+    <body>
+        <div class="player-names">
+            <h2>Enter Names</h2>
+            
+                <input type="text" class="players player-name-1" id="player-name-1" placeholder="Player One"><br>
+                <input type="text" class="players player-name-2" id="player-name-2" placeholder="Player Two"><br>
+                <button class="btn-start" type="submit" onclick="initialize()">Start Game <i class="fas fa-arrow-circle-right"></i></button>
+                <br><br><hr style="color: #eb4040;"><br>
+        
+        <div class="rules">
+            <h2>Rules</h2>
+            <ul>
+                <li>The first player to reach 100 points wins.</li>
+                <li>You can change the final score by entering the value in final score field.</li>
+                <li>You can roll the dice until you get 1 on either of the dice. On getting 1 you loose your turn automatically!</li>
+                <li>If you hold your current score, the next player gets to roll the dice.</li>
+                <li>The circle <i class="fas fa-dot-circle" style="color: #eb4040;"></i> next to the player name  indicates that its his turn to roll the die.</li>
+            </ul>
+        </div></div>
+        <div class="wrapper clearfix">
+            <div class="player-1 active">
+                <div class="player-name" id="name-1">Player 1</div>
+                <div class="player-score" id="score-1">50</div>
+                <div class="current-player">
+                    <div class="current-player-indicator">Current</div>
+                    <div class="current-player-score" id="current-1">20</div>
+                </div>
+            </div>
+
+            <div class="player-2">
+                <div class="player-name" id="name-2">Player 2</div>
+                <div class="player-score" id="score-2">50</div>
+                <div class="current-player">
+                    <div class="current-player-indicator">Current</div>
+                    <div class="current-player-score" id="current-2">10</div>
+                </div>
+            </div>
+
+            <button class="btn btn-new" onclick="newGame()">
+                <i class="far fa-plus-square icon" aria-hidden="true"></i>New Game
+            </button>
+            <button class="btn btn-roll" onclick="roll()">
+                <i class="fas fa-dice icon" aria-hidden="true"></i>Roll the Die
+            </button>
+            <button class="btn btn-hold" onclick="hold()">
+                <i class="fas fa-clipboard-check icon" aria-hidden="true"></i>Hold
+            </button>
+
+            <input type="text" name="final-score" id="final-score" class="final-score" placeholder="Final Score">
+            <img src="images/d-1.png" alt="Dice" class="dice" id="dice-1">
+            <img src="images/d-3.png" alt="Dice" class="dice" id="dice-2">
+
+
+        </div>
+        <script src="app.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+    </body>
+</html>
