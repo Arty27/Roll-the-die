@@ -17,7 +17,10 @@
                 <input type="text" class="players player-name-1" id="player-name-1" placeholder="Player One"><br>
                 <input type="text" class="players player-name-2" id="player-name-2" placeholder="Player Two"><br>
                 <button class="btn-start" type="submit" onclick="initialize()">Start Game <i class="fas fa-arrow-circle-right"></i></button>
-                <br><br><hr style="color: #eb4040;"><br>
+                <br><hr class="line" style="color: #eb4040;">
+                <a class="btn-two" href="index.html"><i class="fas fa-dice-two"></i> Two Player </i></a>
+                <a class="btn-two" href="4-player.html"><i class="fas fa-dice-four"></i> Four Player </a>
+                <hr class="line">
         
         <div class="rules">
             <h2>Rules</h2>
@@ -28,7 +31,8 @@
                 <li>If you hold your current score, the next player gets to roll the dice.</li>
                 <li>The circle <i class="fas fa-dot-circle" style="color: #eb4040;"></i> next to the player name  indicates that its his turn to roll the die.</li>
             </ul>
-        </div></div>
+        </div>
+    </div>
         <div class="wrapper clearfix">
             <div class="player-1 active">
                 <div class="player-name" id="name-1">Player 1</div>
@@ -59,8 +63,8 @@
             </button>
 
             <input type="text" name="final-score" id="final-score" class="final-score" placeholder="Final Score">
-            <img src="images/d-1.png" alt="Dice" class="dice" id="dice-1">
-            <img src="images/d-3.png" alt="Dice" class="dice" id="dice-2">
+            <img src="images/d-1.png" alt="Dice" class="dice" id="dice-1" style="border-radius: 5px;">
+            <img src="images/d-3.png" alt="Dice" class="dice" id="dice-2" style="border-radius: 5px;">
 
 
         </div>
